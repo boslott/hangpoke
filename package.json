@@ -1,0 +1,48 @@
+{
+  "name": "hangpoke",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A fun pokemon version of the class hangman guessing game",
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.6.1",
+    "nodemon": "^1.14.11"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^5.0.0",
+    "es6-promisify": "^6.0.0",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "express-validator": "^4.3.0",
+    "moment": "^2.21.0",
+    "morgan": "^1.9.0",
+    "uuid": "^3.2.1",
+    "validator": "^9.4.0"
+  },
+  "scripts": {
+    "server": "node start.js",
+    "client": "node scripts/start-client.js",
+    "start": "concurrently \"nodemon start.js\" \"npm run client\"",
+    "build": "node scripts/build.js",
+    "installDeps": "yarn && cd client && yarn",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "loadSeed": "yarn blowitallaway && node ./data/load-data.js",
+    "blowitallaway": "node ./data/load-data.js --delete",
+    "loadLessons": "yarn blowitallawayLessons && node ./data/load-data_freestyle101-lessons.js",
+    "blowitallawayLessons": "node ./data/load-data_freestyle101-lessons.js --delete"
+  },
+  "engines": {
+    "node": "^9.5.0"
+  },
+  "author": "Bo Slott",
+  "license": "MIT"
+}
