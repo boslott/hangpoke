@@ -1,0 +1,11 @@
+.title {
+  background: linear-gradient(to right, $color-red, $color-red-darker);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 5rem;
+  border-width: 0 1px;
+  border-style: solid;
+  border-color: $color-black;
+  padding: 0 4rem;
+  display: inline-block;
+}
