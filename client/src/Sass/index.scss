@@ -1,9 +1,15 @@
 // Base
 @import './base/_base.scss';
 
+// Layout
+@import './layout/_row.scss';
+
 // Abstracts
 @import './abstracts/_colors.scss';
 
 // Components
 @import './components/_App.scss';
 @import './components/_Title.scss';
+@import './components/_GameImage.scss';
+@import './components/_LetterBox.scss';
+@import './components/_Word.scss';

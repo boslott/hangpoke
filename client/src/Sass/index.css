@@ -3,6 +3,11 @@ html {
   margin: 0;
   padding: 0; }
 
+.row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .App {
   text-align: center; }
 
@@ -11,7 +16,7 @@ html {
   height: 80px; }
 
 .App-header {
-  padding-top: 2rem; }
+  padding: 5rem 0 0 5rem; }
 
 .App-title {
   font-size: 1.5em; }
@@ -34,4 +39,29 @@ html {
   border-style: solid;
   border-color: #222;
   padding: 0 4rem;
-  display: inline-block; }
+  display: inline-block;
+  margin-left: 5rem; }
+
+.game-image {
+  height: 30rem;
+  width: 30rem;
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.letter-box {
+  width: 6rem;
+  height: 6rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #CC1F1A;
+  border-radius: 0.5rem;
+  background-color: #3D4852;
+  color: #E3342F;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin: 5rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
